@@ -200,13 +200,11 @@
 
         const folioLinks = document.querySelectorAll('.folio-item a');
         const modals = [];
-        let counter = 1;
 
         folioLinks.forEach(function(link) {
-            // let modalbox = link.getAttribute('href');
-            let modalbox = `modal-0${counter}`;
+            let modalbox = link.getAttribute('href');
             let instance = basicLightbox.create(
-                document.querySelector('#'+modalbox),
+                document.querySelector(modalbox),
                 {
                     onShow: function(instance) {
                         //detect Escape key press
@@ -219,15 +217,13 @@
                     }
                 }
             )
-            // modals.push(instance);
-
-            counter++
+            modals.push(instance);
         });
 
         folioLinks.forEach(function(link, index) {
             link.addEventListener("click", function(e) {
-                // e.preventDefault();
-                // modals[index].show();
+                e.preventDefault();
+                modals[index].show();
             });
         });
 

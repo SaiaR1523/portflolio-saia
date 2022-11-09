@@ -4226,7 +4226,11 @@ input[type="button"].btn--primary:focus {
     overflow: hidden;
     position: relative;
 }
-
+.s-testimonials.column{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 .s-testimonials__bg {
     display: block;
     position: absolute;
@@ -4259,6 +4263,7 @@ input[type="button"].btn--primary:focus {
 .s-testimonials h3 {
     margin-top: 0;
     color: white;
+    text-align: center;
 }
 
 .s-testimonials__header, .s-testimonials__content {
