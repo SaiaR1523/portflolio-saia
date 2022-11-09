@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/@mediapipe/camera_utils/camera_utils.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@mediapipe/control_utils/control_utils.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@mediapipe/drawing_utils/drawing_utils.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@mediapipe/hands/hands.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body>
+    <div id="test"></div>
+  <div class="container text-center">
+    <h1>Bienvenue sur mon site </h1>
+    <h2>Reconnaissance de position d'une main par Mediapipe</h2>
+    <video hidden class="input_video"></video>
+    <!--canvas class="output_canvas" width="1280px" height="720px"></canvas-->
+    <canvas class="output_canvas" width="640px" height="360px"></canvas>
+    <div id = "trackingD"> </div>
+  </div>
+  <br>
+  <div class="container2">
+    CAMERA : 
+      <div> <button onclick="camera.start(pleve = 1 );" class="btn btn-dark">DEMARRER </button> </div>
+      <div>  <button onclick="camera.stop(Palm = 1 );" class="btn btn-dark">ARRETER </button> </div>
+  </div>
+  <hr>
+  <div id="tracking">...</div>
+  <script src = "./module.js"> </script>
+</body>
+</html>
