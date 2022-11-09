@@ -3,8 +3,8 @@ const canvasElement = document.getElementsByClassName('output_canvas')[0];
 const trackingElement = document.getElementById('tracking');
 const canvasCtx = canvasElement.getContext('2d');
 let index; // 1=> index levé
-let deux;
-let trois;
+let deux;  // 2=> doigt levés
+let trois; // 3 => levéss
 let g_deux;
 let gauche; 
 let droite;
