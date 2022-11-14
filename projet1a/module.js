@@ -1,3 +1,10 @@
+window.onload = function () {
+  OpenBootstrapPopup();
+};
+function OpenBootstrapPopup() {
+  $("#simpleModal").modal('show');
+}
+
 const videoElement = document.getElementsByClassName('input_video')[0];
 const canvasElement = document.getElementsByClassName('output_canvas')[0];
 const trackingElement = document.getElementById('tracking');
@@ -12,6 +19,8 @@ let pleve;
 let iLeve; 
 let iLeveG;
 let Palm;
+
+
 
 // PARTIE HANDS ////////////////////////////////////////////////////////
 // le modèle Hands analyse une image reçue et l'interprète en me retournant
@@ -186,3 +195,4 @@ const camera = new Camera(
   }  
 );  // 1280 x 720 --> 640 x 360
 camera.start();
+
