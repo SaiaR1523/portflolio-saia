@@ -57,7 +57,7 @@ function saiaOnResults(results) {
 
 
     let main2 = results.multiHandLandmarks[0];
-    // console.log(main2[8,12].y);
+    // console.log(main2[8,12].y); main "yo"
     if(main2[8].y < main2[6].y && main2[12].y < main2[10].y 
       && main2[16].y > main2[14].y 
       && main2[20].y > main2[18].y
@@ -84,7 +84,7 @@ function saiaOnResults(results) {
 
 
     let main3 = results.multiHandLandmarks[0];
-    // console.log(main3[8,12,16].y);
+    // console.log(main3[8,12,16].y); "trois avec l'indexe, majeur, et l'annulaire"
     if(main3[8].y < main3[6].y && main3[12].y < main3[10].y 
       && main3[16].y < main3[14].y 
       && main3[4].x < main3[8].x 
@@ -142,7 +142,7 @@ function saiaOnResults(results) {
     // console.log(main4[8,12,16].y);
     if(main6[4].y <  main6[2].y && main6[8].y < main6[6].y && main6[12].y < main6[10].y && main6[16].y < main6[14].y && main6[20].y < main6[18].y
       && main6[8].y < main6[5].y && main6[12].y < main6[9].y && main6[16].x < main6[13].y && main6[4].x > main6[8].x ){
-      Palm = 1   ////L'indexe droite est levé, en sachant que l'ax du pouce est plus petit que l'indexe 
+      Palm = 1   ////L'indexe droite est levé, en sachant que l'axe du pouce est plus petit que l'indexe 
       document.body.style.backgroundColor = "green";
     } 
     else {
